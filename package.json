@@ -1,0 +1,21 @@
+{
+  "name": "browserify-stringify-minimize-css-content",
+  "version": "1.0.1",
+  "description": "for browserify stringify transform, to minimize css file content.",
+  "main": "browserify-stringify-minimize-css-content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "browserify",
+    "stringify",
+    "minimize",
+    "css"
+  ],
+  "author": "fwg",
+  "license": "ISC",
+  "dependencies": {
+    "browserify-transform-tools": "^1.7.0",
+    "clean-css": "^5.2.2"
+  }
+}
