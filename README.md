@@ -12,8 +12,8 @@ npm install browserify-stringify-minimize-css-content
 ```bat
 
 browserify ... ^
-	-t [ browserify-stringify-minimize-css-content --minimizeExtensions [ .css ] ] ^
-	-t [ stringify --extensions [.html .htm .css ] --minify true ^
+	-g [ browserify-stringify-minimize-css-content --minimizeExtensions [ .css ] ] ^
+	-g [ stringify --extensions [.html .htm .css ] --minify true ^
 		--minifyAppliesTo [ --includeExtensions [ .html .htm .css ] ] ] ^
 	...
 
