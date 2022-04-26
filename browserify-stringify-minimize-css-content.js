@@ -10,8 +10,14 @@ module.exports = browserify_transform_tools.makeStringTransform(
 		//console.log(path.extname(transformOptions.file));
 		//console.log(transformOptions.config.minimizeExtensions._.indexOf(path.extname(transformOptions.file)));
 
-		//`_`: refer `subarg` from `browserify`
-		if (transformOptions.config.minimizeExtensions._.indexOf(path.extname(transformOptions.file)) >= 0) {
+		var minimizeExtensions = transformOptions && transformOptions.config &&
+			transformOptions.config.minimizeExtensions;
+
+		//`_`: refer `subarg`/`minimist` from `browserify`
+		if (minimizeExtensions && minimizeExtensions._ && (minimizeExtensions._ instanceof Array))
+			minimizeExtensions = transformOptions.config.minimizeExtensions = minimizeExtensions._;	//fully replace it
+
+		if (minimizeExtensions && minimizeExtensions.indexOf(path.extname(transformOptions.file)) >= 0) {
 			//console.log(content);
 			content = (new clean_css({})).minify(content).styles;
 			//console.log(content);
