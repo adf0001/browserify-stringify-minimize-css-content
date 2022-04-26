@@ -1,6 +1,6 @@
 {
   "name": "browserify-stringify-minimize-css-content",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "for browserify stringify transform, to minimize css file content.",
   "main": "browserify-stringify-minimize-css-content.js",
   "scripts": {
@@ -17,5 +17,20 @@
   "dependencies": {
     "browserify-transform-tools": "^1.7.0",
     "clean-css": "^5.2.2"
-  }
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "stringify": "^5.2.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adf0001/browserify-stringify-minimize-css-content.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adf0001/browserify-stringify-minimize-css-content/issues"
+  },
+  "homepage": "https://github.com/adf0001/browserify-stringify-minimize-css-content#readme"
 }

@@ -1,0 +1,25 @@
+
+/* level 3: functional properties */
+
+.ht.entity{
+	display:inline-block;
+	width:1em;
+	height:1em;
+	font-family: monospace;
+	cursor:pointer;
+	vertical-align:middle;
+	text-align:center;
+	line-height:100%;
+	overflow:hidden;
+	box-sizing:content-box;
+	padding:1px;
+	margin:1px;
+}
+.ht.entity.button,.ht.entity.btn{
+	padding:2px;
+	border:1px solid gray;
+	border-radius:20%;
+}
+.ht.entity:hover,.ht.entity.button:hover,.ht.entity.btn:hover{
+	background:#eeeeee;
+}
