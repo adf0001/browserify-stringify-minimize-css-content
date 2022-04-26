@@ -1,10 +1,10 @@
 {
   "name": "browserify-stringify-minimize-css-content",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "for browserify stringify transform, to minimize css file content.",
   "main": "browserify-stringify-minimize-css-content.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "browserify",
