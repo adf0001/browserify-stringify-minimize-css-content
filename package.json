@@ -1,6 +1,6 @@
 {
   "name": "browserify-stringify-minimize-css-content",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "for browserify stringify transform, to minimize css file content.",
   "main": "browserify-stringify-minimize-css-content.js",
   "scripts": {

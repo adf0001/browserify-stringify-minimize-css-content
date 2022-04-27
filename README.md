@@ -25,10 +25,10 @@ browserify ... ^
 //or
 	-g [ browserify-stringify-minimize-css-content --appliesTo [ --includeExtensions .css --includeExtensions .css ] ]
 
-!!! NOTE: duplicated '--includeExtensions/excludeExtensions/files ...' to overcome the bug from 'browserify-transform-tools' in Windows command line.
+!!! NOTE: duplicated '--includeExtensions/excludeExtensions/files ...' to overcome the bug from 'browserify-transform-tools' in command line.
 
 //or in Linux shell
-	-g [ browserify-stringify-minimize-css-content --appliesTo.includeExtensions [ .css .css2 ] ]
+	-g [ browserify-stringify-minimize-css-content --appliesTo.includeExtensions { .css .css2 } ]
 
 ```
 
